@@ -8,6 +8,7 @@ Creating your first bot
 -----------------------
 
 To make a bot, make sure mineflayer is installed.
+
 <TODO: add link to project.md>
 
 First, we need to make sure NodeJS loads mineflayer.
@@ -26,8 +27,10 @@ var bot = mineflayer.createBot({
 });
 ```
 The `host` is the server IP. `port` is the server port.
+
 If you want to make a bot that connects to a cracked server, leave out the `password` part and type the username to `username`.
 If the bot is not connecting to a cracked server, type the email into `username`.
+
 The `version` is the version of mineraft that the bot will connect. If you enter `false`, the bot will guess the server version.
 If you want to define the version, replace the `false` value with the server version. (Version must be a string)
 
@@ -57,19 +60,24 @@ bot.on("chat", function(username, message){
 How to use the docs
 -------------------
 <TODO: link to mineflayer docs>
+
 You can see that the API documentation has a table of contents.
 You can just scroll to the "Bot" section, all the things above it like `mineflayer.furnace` is more advanced.
 
 Events are events like seen above.
+
 Functions returns values so you can save them as varailables like
 ```js
 var myBlock = bot.blockAt(point);
 ```
+
 Methods are just functions that return nothing. They do stuff.
+
 Properties are values, you can save them like methods. Most of them are read-only so changing them may break the bot.
 
 `point` is a vec3 class.
 You can install and use it with `npm`
+
 <todo: npm and vec3 link>
 
 
